@@ -52,19 +52,34 @@ header {
     color: darkslategrey;
     text-transform: uppercase;
 } 
-
 .featuredWork h2{
     width: 100%;
+    border-bottom:5px dotted black; 
 }
-
 .featuredWork a, a:visited{
     color: darkblue;
+    overflow-wrap: break-word;
 }
-
+.featuredWork a:hover{
+    background-color: aqua;
+}
 .FeaturedItem {
     max-width: 33.3333%;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 25px; 
+}
+.FeaturedItem h3{
+    line-height: 24.8px;
+    max-height: 49.6px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.FeaturedItem img:hover{
+    border: 5px solid orange;
+    width:95%;
     
 }
 
@@ -92,5 +107,9 @@ header {
         margin-right: auto;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .featuredWork a{
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
