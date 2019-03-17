@@ -77,10 +77,16 @@ header {
     overflow: hidden;
     text-overflow:ellipsis;
 }
-.FeaturedItem img:hover{
+
+.FeaturedDetails {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FeaturedItem img:hover {
     border: 5px solid orange;
-    width:95%;
-    
+    width: 95%;
 }
 
 
